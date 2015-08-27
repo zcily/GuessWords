@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/play_game_background"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/play_game_item_picture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"  
+       			android:layout_centerVertical="true"  
+				android:scaleType="center"  
+                android:src="@drawable/picture_item_question" />
+
+            <TextView
+                android:id="@+id/play_game_item_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/play_game_item_picture"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="17dp"
+                android:textSize="12sp"
+                android:layout_toLeftOf="@+id/play_game_item_picture"
+                android:textColor="@color/play_game_text_color"
+                android:text="@string/game_item_number" />
+
+            <TextView
+                android:id="@+id/play_game_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/play_game_item_number"
+                android:layout_alignBottom="@+id/play_game_item_number"
+                android:layout_toLeftOf="@+id/play_game_item_number"
+                android:layout_marginRight="3dp"
+                android:textSize="12sp"
+                android:textColor="@color/play_game_text_color"
+                android:text="@string/game_item_name" />
+
+            <TextView
+                android:id="@+id/play_game_pts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/play_game_item_number"
+                android:layout_marginLeft="38dp"
+                android:textSize="12sp"
+                android:layout_toRightOf="@+id/play_game_item_picture"
+                android:textColor="@color/play_game_text_color"
+                android:text="@string/game_pts" />
+
+            <TextView
+                android:id="@+id/play_game_pts_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:textSize="12sp"
+                android:layout_alignBaseline="@+id/play_game_pts"
+                android:layout_alignBottom="@+id/play_game_pts"
+                android:layout_toRightOf="@+id/play_game_pts"
+                android:textColor="@color/play_game_text_color"
+                android:text="@string/game_pts_value" />
+
+            <TextView
+                android:id="@+id/play_game_left_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/play_game_pts"
+                android:layout_below="@+id/play_game_pts"
+                android:textColor="@color/play_game_text_color"
+                android:textSize="12sp"
+                android:text="@string/game_left_time"/>
+
+            <TextView
+                android:id="@+id/play_game_left_time_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:textSize="12sp"
+                android:layout_alignBaseline="@+id/play_game_left_time"
+                android:layout_alignBottom="@+id/play_game_left_time"
+                android:layout_toRightOf="@+id/play_game_left_time"
+                android:textColor="@color/play_game_text_color"
+                android:text="@string/game_left_time_value" />
+
+            <TextView
+                android:id="@+id/play_game_answer_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="22sp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/play_game_answer_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:scaleType="center"
+                android:layout_marginLeft="48dp"
+                android:src="@drawable/picture_answer_1" />
+
+            <Button
+                android:id="@+id/play_game_answer_button_1"
+                android:layout_width="105dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/play_game_answer_1"
+                android:layout_alignParentLeft="@+id/play_game_answer_1"
+                android:layout_marginLeft="32dp"
+                android:background="@drawable/game_btn"
+                android:text="Button" />
+
+            <ImageView
+                android:id="@+id/play_game_answer_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/play_game_answer_button_1"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="85dp"
+                android:scaleType="center"
+                android:src="@drawable/picture_answer_2" />
+
+            <Button
+                android:id="@+id/play_game_answer_button_2"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:layout_alignLeft="@+id/play_game_answer_2"
+                android:layout_alignTop="@+id/play_game_answer_2"
+                android:layout_marginLeft="45dp"
+                android:background="@drawable/game_btn"
+                android:text="Button" />
+
+            <ImageView
+                android:id="@+id/play_game_answer_stick_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/play_game_answer_button_2"
+                android:layout_below="@+id/play_game_answer_button_2"
+                android:layout_marginRight="29dp"
+                android:src="@drawable/picture_answer_stick" />
+
+        </RelativeLayout>
+</LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            
+            <ImageView
+                android:id="@+id/play_game_answer_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:scaleType="center"
+                android:layout_marginLeft="48dp"
+                android:src="@drawable/picture_answer_3" />
+
+            <Button
+                android:id="@+id/play_game_answer_button_3"
+                android:layout_width="105dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/play_game_answer_3"
+                android:layout_alignParentLeft="@+id/play_game_answer_3"
+                android:layout_marginLeft="32dp"
+                android:background="@drawable/game_btn"
+                android:text="Button" />
+
+            <ImageView
+                android:id="@+id/play_game_answer_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/play_game_answer_button_3"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="85dp"
+                android:scaleType="center"
+                android:src="@drawable/picture_answer_4" />
+
+            <ImageView
+                android:id="@+id/play_game_answer_stick_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/play_game_answer_button_4"
+                android:layout_below="@+id/play_game_answer_button_4"
+                android:layout_marginRight="29dp"
+                android:src="@drawable/picture_answer_stick" />
+
+            <Button
+                android:id="@+id/play_game_answer_button_4"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:layout_alignLeft="@+id/play_game_answer_4"
+                android:layout_alignTop="@+id/play_game_answer_4"
+                android:layout_marginLeft="73dp"
+                android:background="@drawable/game_btn"
+                android:text="Button" />
+            
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
